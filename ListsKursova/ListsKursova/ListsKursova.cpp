@@ -3,9 +3,23 @@
 
 #include <iostream>
 
+struct elem 
+{
+    int key;
+    elem* next;
+}*start;
+
+void push(int n) 
+{
+    elem* p = start;
+    start = new elem;
+    start->key = n;
+ 
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
